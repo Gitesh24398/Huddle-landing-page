@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body{
+    width: 1440px;
+    max-width: 100%;
+    height: 800px;
+    background-color:hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+header{
+    width: 100%;
+}
+img.logo{
+    margin: 3.75em 5em;
+}
+.main{
+    width: 100%;
+    margin: 0 5em;
+}
+.container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+.main .container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+section{
+    width: 50%;
+    float: left;
+}
+img.illustration {
+    width: 100%;
+    max-width: 100%;
+    }
+article{
+    width: 45%;
+    float: left;
+    margin-left: 3.13em;
+}
+article h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    margin-top: 1em;
+    letter-spacing: 0.06em;
+}
+article p{
+    margin: 1.56em 0;
+}
+article button{
+    width: 10em;
+    height: 3em;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    border-radius: 2em;
+    font-size: 1.8vw;
+    letter-spacing: 0.06em;
+    border: none;
+    box-shadow: hsl(255, 27.8%, 42.4%) 3px 3px 3px 3.5px;
+    -webkit-webkit: border radius 1.56em;
+    -moz-webkit: border radius 1.56em;
+    -ms-webkit: border radius 1.56em;
+    -o-webkit: border radius 1.56em;
+    outline: none;
+}
+article button:hover{
+    background-color: hsl(291.5, 55.3%, 64.9%);
+    color: #fff;
+}
+footer {
+    width: 100%;
+    clear: both;
+    padding-top: 1.56em;
+}
+
+.socials{
+    width: 18.75em;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 0.06em solid #fff;
+    margin: 0 0.44em;
+    position: relative;
+}
+li a{
+    position: absolute;
+    top: -0.35em;
+    left: -0.3em;
+    padding: 1em;
+}
+li i{
+    color: #fff;
+    font-size: 1.25em;
+}
+
+}
+@keyframes itemAnimation{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.social-item:hover{
+    background-color: hsl(291.5, 55.3%, 64.9%);
+    color: #fff;
+    
+}
+@keyframes aBigOne{
+    0%{transform: scale(1);}
+    100%{transform: scale(2);}
+}
+
+.footer p{
+    clear: both;
+}
+.attribution {
+
+    font-size: 1.2vw;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+}
+.attribution a:hover{
+    display: inline-block;
+    transform: scaleY(1.5);
+    -webkit-transform: scaleY(1.5);
+    -moz-transform: scaleY(1.5);
+    -ms-transform: scaleY(1.5);
+    -o-transform: scaleY(1.5);
+}
+
+@media (max-width: 84.375em) {
+    html, body{
+        width: 100vw;
+        background-image: url(images/bg-desktop.svg);
+    }
+
+    img.logo{
+        width: 25%;
+        margin: 2.5em 10em;
+    }
+
+    section {
+        max-width: 40%
+    }
+    article {
+        max-width: 55%;
+        margin-left: 3%;
+    }
+    article h1 {
+        margin-top: 0;
+
+        font-size: 2.5vw;
+    }
+    article p {
+        font-size: 2vw;
+    }
+}
+
+
+@media screen and (max-width: 48.063em){
+    html, body{
+        width: 100%;
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    img.logo{
+        width: 37%;
+        margin: 2.5em 1em;
+    }
+
+    .main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main .container{
+        padding: 0;
+    }
+    section{
+        width: 80%;
+        float: none;
+        margin: 1.88em auto;
+    }
+    article{
+        width: 80%;
+        float: none;
+        margin: auto;
+    }
+    article h1{
+        font-weight: 700;
+        font-size: 3.5vw;
+        margin-top: 0;
+        padding-top: 1.88em;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    article p{
+
+        font-size: 2.8vw;
+        text-align: center;
+        margin: 1.88em 0;
+    }
+    article button{
+        width: 12.50em;
+        height: 2.50em;
+        font-size: 2.8vw;
+        letter-spacing: 0;
+        margin: 0 auto;
+        display: block;
+    }
+    footer{
+        padding-top: 0;
+    }
+
+    .socials{
+        margin: 3.75em auto 2.50em;
+        float: none;
+        text-align: center;
+    }
+    li{
+        width: 4em;
+        height: 4em;
+        margin: 0 0.14em;
+    }
+    li a{
+        top: 0.1em;
+        left: 0.3em;
+        }
+    li i{
+
+        font-size: 2.5vw;
+    }
+}
